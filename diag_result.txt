@@ -1,0 +1,42 @@
+=== PostureGuard Diagnostic Report ===
+Path: C:\PostureGuard\
+Time: 2026-07-19 21:47:34.07
+
+--- [1] python launcher list ---
+ -V:3.14 *        C:\Users\PC\AppData\Local\Python\pythoncore-3.14-64\python.exe
+ -V:3.13          C:\Users\PC\AppData\Local\Programs\Python\Python313\python.exe
+ -V:3.11          C:\Users\PC\AppData\Local\Programs\Python\Python311\python.exe
+
+--- [2] py -3.11 version / arch ---
+3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+arch: 64bit
+exe: C:\Users\PC\AppData\Local\Programs\Python\Python311\python.exe
+
+--- [3] python on PATH ---
+C:\Users\PC\AppData\Local\Programs\Python\Python311\python.exe
+C:\Users\PC\AppData\Local\Programs\Python\Python313\python.exe
+C:\Users\PC\AppData\Local\Microsoft\WindowsApps\python.exe
+C:\Users\PC\AppData\Local\Python\bin\python.exe
+Python 3.11.9
+
+--- [4] package folder check ---
+site-packages: FOUND
+129
+(number above = item count, normal is 100+)
+backend-main: FOUND
+frontend-dist: FOUND
+
+--- [5] import test ---
+PYTHONPATH=C:\PostureGuard\backend\venv\Lib\site-packages
+  numpy : OK
+  cv2 : OK
+  mediapipe : OK
+  fastapi : OK
+  uvicorn : OK
+  sqlalchemy : OK
+
+--- [6] port 8000 / 3000 in use ---
+(empty above = ports are free = good)
+
+--- [7] backend app import (no server spawned) ---
+app import: OK
